@@ -1,0 +1,6 @@
+{
+  "name": "Le R — Menu & Expérience Digitale",
+  "description": "Expérience digitale éditoriale du restaurant Le R à Oran : carte interactive multilingue, spécialités recommandées par le chef, avis clients et espace propriétaire.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

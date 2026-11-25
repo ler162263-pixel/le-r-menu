@@ -1,0 +1,304 @@
+{
+  "restaurant": {
+    "logoLabel": "Le R",
+    "name": {
+      "fr": "Le R",
+      "en": "Le R",
+      "ar": "Le R"
+    },
+    "subtitle": {
+      "fr": "Maraval · Oran",
+      "en": "Maraval · Oran",
+      "ar": "مارافال · وهران"
+    },
+    "logo": "le-r:ringLogo",
+    "mascotImage": "le-r:chefMascot",
+    "description": {
+      "fr": "Pizzas, Méga Pizza, pastas, sandwichs, tacos, burgers, plats Kentucky, plats chauds, chawarma viande et poulet, jus frais et boissons à Maraval, Oran.",
+      "en": "Pizzas, Méga Pizza, pastas, sandwiches, tacos, burgers, Kentucky plates, hot dishes, beef and chicken shawarma, fresh juices, and drinks in Maraval, Oran.",
+      "ar": "بيتزا، ميغا بيتزا، باستا، سندويتشات، تاكوس، برغر، أطباق كنتاكي، أطباق ساخنة، شورما لحم ودجاج، عصائر طازجة ومشروبات في مارافال، وهران."
+    },
+    "storyTitle": {
+      "fr": "La Maison Le R",
+      "en": "Le R House",
+      "ar": "مطعم Le R"
+    },
+    "storyBody": {
+      "fr": "Retrouvez l’intégralité de la carte officielle Le R — pizzas, Méga Pizza, entrées, pastas, sandwichs, tacos, burgers, plats Kentucky, plats chauds, شورما لحم et شورما دجاج, boissons et jus frais.",
+      "en": "Explore the official Le R menu — pizzas, Méga Pizza, starters, pastas, sandwiches, tacos, burgers, Kentucky plates, hot dishes, beef and chicken shawarma, drinks, and fresh juices.",
+      "ar": "تصفح قائمة Le R الرسمية الكاملة — البيتزا، ميغا بيتزا، المقبلات، الباستا، السندويتشات، التاكوس، البرغر، أطباق كنتاكي، الأطباق الساخنة، شورما لحم وشورما دجاج، المشروبات والعصائر الطازجة."
+    },
+    "atmosphereNote": {
+      "fr": "Avenue Mekki Khlifa, Maraval - Oran · Carte consultable en salle via QR code unique.",
+      "en": "Avenue Mekki Khlifa, Maraval - Oran · Digital menu accessible via a single permanent QR code.",
+      "ar": "شارع مكي خليفة، مارافال - وهران · قائمة رقمية متاحة عبر رمز QR ثابت."
+    },
+    "address": {
+      "fr": "Avenue Mekki Khlifa, Maraval - Oran",
+      "en": "Avenue Mekki Khlifa, Maraval - Oran",
+      "ar": "شارع مكي خليفة، مارافال - وهران"
+    },
+    "hours": {
+      "fr": "",
+      "en": "",
+      "ar": ""
+    },
+    "phone": "0549 93 31 41",
+    "email": "",
+    "social": {
+      "tiktok": "Le R maraval",
+      "snapchat": "Pizzeria_le_r"
+    }
+  },
+  "categories": [
+    {
+      "id": "pizzas",
+      "name": "Pizzas",
+      "description": "",
+      "sortOrder": 1,
+      "active": true,
+      "themeVariant": "default",
+      "engravingKey": "pizzas",
+      "subSections": [
+        {
+          "id": "mega-pizza",
+          "title": "Méga Pizza",
+          "themeVariant": "dark-feature",
+          "engravingKey": "mega-pizza",
+          "items": [
+            { "id": "mega-1-part", "label": "1 Part", "price": 2000 },
+            { "id": "mega-2-parts", "label": "2 Parts", "price": 2500 },
+            { "id": "mega-le-r", "label": "Le R", "price": 3500 }
+          ]
+        }
+      ],
+      "products": [
+        { "id": "pizza-margherita", "name": "Margherita", "description": "", "price": 400, "image": "", "available": true },
+        { "id": "pizza-chawarma", "name": "Chawarma", "description": "", "price": 700, "image": "", "available": true },
+        { "id": "pizza-vegetarienne", "name": "Végétarienne", "description": "", "price": 800, "image": "/images/categories/pizzas.webp", "available": true },
+        { "id": "pizza-viande-hachee", "name": "Viande Hachée", "description": "", "price": 800, "image": "", "available": true },
+        { "id": "pizza-poulet-fume", "name": "Poulet Fumé", "description": "", "price": 750, "image": "", "available": true },
+        { "id": "pizza-au-thon", "name": "Au Thon", "description": "", "price": 800, "image": "", "available": true },
+        { "id": "pizza-swiss", "name": "Swiss", "description": "", "price": 900, "image": "", "available": true },
+        { "id": "pizza-chef", "name": "Chef", "description": "", "price": 1000, "image": "/images/categories/pizzas.webp", "available": true },
+        { "id": "pizza-crevette", "name": "Crevette", "description": "", "price": 1500, "image": "", "available": true },
+        { "id": "pizza-napolitaine", "name": "Napolitaine", "description": "", "price": 850, "image": "", "available": true },
+        { "id": "pizza-mexicaine", "name": "Mexicaine", "description": "", "price": 850, "image": "/images/categories/pizzas.webp", "available": true },
+        { "id": "pizza-fermiere", "name": "Fermière", "description": "", "price": 900, "image": "", "available": true },
+        { "id": "pizza-4-fromages", "name": "4 Fromages", "description": "", "price": 950, "image": "", "available": true },
+        { "id": "pizza-le-r", "name": "Le R", "description": "", "price": 1200, "image": "/images/categories/pizzas.webp", "available": true }
+      ]
+    },
+    {
+      "id": "entrees",
+      "name": "Entrées",
+      "description": "",
+      "sortOrder": 2,
+      "active": true,
+      "themeVariant": "default",
+      "engravingKey": "entrees",
+      "products": [
+        { "id": "entree-salade-variee", "name": "Salade Variée", "description": "", "price": 500, "image": "", "available": true },
+        { "id": "entree-salade-cesar", "name": "Salade César", "description": "", "price": 700, "image": "", "available": true },
+        { "id": "entree-omelette-fromage", "name": "Omelette Fromage", "description": "", "price": 400, "image": "", "available": true },
+        { "id": "entree-omelette-au-poulet", "name": "Omelette au Poulet", "description": "", "price": 500, "image": "", "available": true },
+        { "id": "entree-omelette-crevette", "name": "Omelette Crevette", "description": "", "price": 800, "image": "", "available": true },
+        { "id": "entree-gratin-poulet", "name": "Gratin Poulet", "description": "", "price": 600, "image": "", "available": true },
+        { "id": "entree-gratin-crevette", "name": "Gratin Crevette", "description": "", "price": 800, "image": "", "available": true },
+        { "id": "entree-soupe-de-lentilles", "name": "Soupe de Lentilles", "description": "", "price": 300, "image": "", "available": true },
+        { "id": "entree-hmiss", "name": "Hmiss", "description": "", "price": 200, "image": "", "available": true }
+      ]
+    },
+    {
+      "id": "les-pastas",
+      "name": "Les Pastas",
+      "description": "",
+      "sortOrder": 3,
+      "active": true,
+      "themeVariant": "default",
+      "engravingKey": "les-pastas",
+      "products": [
+        { "id": "pasta-penne-poulet", "name": "Penne Poulet", "description": "", "price": 800, "image": "", "available": true },
+        { "id": "pasta-penne-bolognaise", "name": "Penne Bolognaise", "description": "", "price": 900, "image": "/images/categories/les-pastas.webp", "available": true },
+        { "id": "pasta-penne-fruits-de-mer", "name": "Penne Fruits de Mer", "description": "", "price": 1200, "image": "", "available": true },
+        { "id": "pasta-penne-3-fromages", "name": "Penne 3 Fromages", "description": "", "price": 1000, "image": "", "available": true },
+        { "id": "pasta-tagliatelle-panee", "name": "Tagliatelle Panée", "description": "", "price": 1200, "image": "", "available": true },
+        { "id": "pasta-tagliatelle-poulet", "name": "Tagliatelle Poulet", "description": "", "price": 1000, "image": "", "available": true }
+      ]
+    },
+    {
+      "id": "sandwichs",
+      "name": "Sandwichs",
+      "description": "",
+      "sortOrder": 4,
+      "active": true,
+      "themeVariant": "default",
+      "engravingKey": "sandwichs",
+      "products": [
+        { "id": "sand-swiss", "name": "Swiss", "description": "", "price": 500, "image": "/images/categories/sandwichs.webp", "available": true },
+        { "id": "sand-viande-hachee", "name": "Viande Hachée", "description": "", "price": 600, "image": "/images/categories/sandwichs.webp", "available": true },
+        { "id": "sand-mix", "name": "Mix", "description": "", "price": 700, "image": "/images/categories/sandwichs.webp", "available": true },
+        { "id": "sand-mariniere", "name": "Marinière", "description": "", "price": 850, "image": "/images/categories/sandwichs.webp", "available": true },
+        { "id": "sand-kebda", "name": "Kebda", "description": "", "price": 500, "image": "", "available": true }
+      ]
+    },
+    {
+      "id": "les-tacos",
+      "name": "Les Tacos",
+      "description": "",
+      "sortOrder": 5,
+      "active": true,
+      "themeVariant": "default",
+      "engravingKey": "les-tacos",
+      "products": [
+        { "id": "tacos-poulet", "name": "Poulet", "description": "", "price": 600, "image": "/images/categories/les-tacos.webp", "available": true },
+        { "id": "tacos-viande", "name": "Viande", "description": "", "price": 700, "image": "/images/categories/les-tacos.webp", "available": true },
+        { "id": "tacos-mix", "name": "Mix", "description": "", "price": 800, "image": "/images/categories/les-tacos.webp", "available": true }
+      ]
+    },
+    {
+      "id": "burger-menu",
+      "name": "Burger Menu",
+      "description": "",
+      "sortOrder": 6,
+      "active": true,
+      "themeVariant": "default",
+      "engravingKey": "burger-menu",
+      "products": [
+        { "id": "burger-cheese-simple", "name": "Cheese Simple", "description": "", "price": 500, "image": "/images/categories/burger-menu.webp", "available": true },
+        { "id": "burger-chicken-burger", "name": "Chicken Burger", "description": "", "price": 600, "image": "", "available": true },
+        { "id": "burger-cheese-burger", "name": "Cheese Burger", "description": "", "price": 900, "image": "/images/categories/burger-menu.webp", "available": true }
+      ]
+    },
+    {
+      "id": "les-plats",
+      "name": "Les Plats",
+      "description": "",
+      "sortOrder": 7,
+      "active": true,
+      "themeVariant": "default",
+      "engravingKey": "les-plats",
+      "products": [
+        { "id": "plat-escalope-a-la-creme", "name": "Escalope à la Crème", "description": "", "price": 1200, "image": "", "available": true },
+        { "id": "plat-viande", "name": "Plat Viande", "description": "", "price": 1300, "image": "/images/categories/les-plats.webp", "available": true },
+        { "id": "plat-cordon-bleu", "name": "Cordon Bleu", "description": "", "price": 1400, "image": "", "available": true },
+        { "id": "plat-pane-milanaise", "name": "Pané Milanaise", "description": "", "price": 1500, "image": "", "available": true },
+        { "id": "plat-kebda", "name": "Kebda", "description": "", "price": 1200, "image": "", "available": true },
+        { "id": "plat-crevette-sautee-ail", "name": "Plat Crevette Sautée à l’Ail", "description": "", "price": 2000, "image": "", "available": true }
+      ]
+    },
+    {
+      "id": "les-plats-kentucky",
+      "name": "Les Plats Kentucky",
+      "description": "",
+      "sortOrder": 8,
+      "active": true,
+      "themeVariant": "default",
+      "engravingKey": "les-plats-kentucky",
+      "products": [
+        { "id": "kentucky-plat", "name": "Plat Kentucky", "description": "", "price": 1000, "image": "/images/categories/les-plats-kentucky.webp", "available": true },
+        { "id": "kentucky-3-tenders", "name": "3 Tenders Frits", "description": "", "price": 600, "image": "/images/categories/les-plats-kentucky.webp", "available": true },
+        { "id": "kentucky-6-tenders", "name": "6 Tenders Frits", "description": "", "price": 800, "image": "/images/categories/les-plats-kentucky.webp", "available": true },
+        { "id": "kentucky-box-family-1", "name": "Box Family 1", "description": "", "price": 2200, "image": "/images/categories/les-plats-kentucky.webp", "available": true },
+        { "id": "kentucky-box-family-2", "name": "Box Family 2", "description": "", "price": 3200, "image": "/images/categories/les-plats-kentucky.webp", "available": true }
+      ]
+    },
+    {
+      "id": "chawarma-viande",
+      "name": "شورما لحم",
+      "description": "",
+      "sortOrder": 9,
+      "active": true,
+      "themeVariant": "default",
+      "engravingKey": "chawarma-sandwich",
+      "products": [
+        { "id": "chaw-viande-sandwich", "name": "سندويش لحم", "description": "", "price": 550, "image": "/images/categories/chawarma-sandwich.webp", "available": true },
+        { "id": "chaw-viande-sandwich-mix", "name": "سندويش شورما MIX", "description": "", "price": 600, "image": "/images/categories/chawarma-sandwich.webp", "available": true },
+        { "id": "chaw-viande-pain-maison", "name": "لحم PAIN MAISON", "description": "", "price": 650, "image": "/images/categories/chawarma-sandwich.webp", "available": true },
+        { "id": "chaw-viande-le-r", "name": "لحم Le R", "description": "", "price": 750, "image": "/images/categories/chawarma-sandwich.webp", "available": true }
+      ]
+    },
+    {
+      "id": "plats-chawarma-viande",
+      "name": "أطباق شورما لحم",
+      "description": "",
+      "sortOrder": 10,
+      "active": true,
+      "themeVariant": "dark-feature",
+      "engravingKey": "chawarma-plat",
+      "products": [
+        { "id": "pchaw-viande-plat", "name": "طبق لحم", "description": "", "price": 1000, "image": "/images/categories/chawarma-plat.webp", "available": true },
+        { "id": "pchaw-viande-arabi", "name": "طبق عربي لحم", "description": "", "price": 950, "image": "/images/categories/chawarma-plat.webp", "available": true },
+        { "id": "pchaw-viande-arabi-mix", "name": "طبق عربي MIX", "description": "", "price": 1200, "image": "/images/categories/chawarma-plat.webp", "available": true },
+        { "id": "pchaw-viande-arabi-3p", "name": "طبق عربي 3 أشخاص", "description": "", "price": 2500, "image": "/images/categories/chawarma-plat.webp", "available": true },
+        { "id": "pchaw-viande-1kg-mix", "name": "1 كيلوغرام شورما MIX", "description": "", "price": 4000, "image": "", "available": true },
+        { "id": "pchaw-viande-iskandar", "name": "طبق إسكندر", "description": "", "price": 1500, "image": "", "available": true },
+        { "id": "pchaw-viande-riz", "name": "طبق أرز لحم", "description": "", "price": 1800, "image": "", "available": true }
+      ]
+    },
+    {
+      "id": "chawarma-poulet",
+      "name": "شورما دجاج",
+      "description": "",
+      "sortOrder": 11,
+      "active": true,
+      "themeVariant": "default",
+      "engravingKey": "chawarma-sandwich",
+      "products": [
+        { "id": "chaw-poulet-sandwich", "name": "سندويش شورما", "description": "", "price": 400, "image": "/images/categories/chawarma-sandwich.webp", "available": true },
+        { "id": "chaw-poulet-sans-frites", "name": "سندويش شورما بدون بطاطا", "description": "", "price": 450, "image": "/images/categories/chawarma-sandwich.webp", "available": true },
+        { "id": "chaw-poulet-pain-maison", "name": "سندويش شورما PAIN MAISON", "description": "", "price": 450, "image": "/images/categories/chawarma-sandwich.webp", "available": true },
+        { "id": "chaw-poulet-le-r", "name": "سندويش شورما Le R", "description": "", "price": 500, "image": "/images/categories/chawarma-sandwich.webp", "available": true }
+      ]
+    },
+    {
+      "id": "plats-chawarma-poulet",
+      "name": "أطباق شورما دجاج",
+      "description": "",
+      "sortOrder": 12,
+      "active": true,
+      "themeVariant": "dark-feature",
+      "engravingKey": "chawarma-plat",
+      "products": [
+        { "id": "pchaw-poulet-plat", "name": "طبق شورما", "description": "", "price": 800, "image": "/images/categories/chawarma-plat.webp", "available": true },
+        { "id": "pchaw-poulet-arabi", "name": "طبق عربي", "description": "", "price": 800, "image": "/images/categories/chawarma-plat.webp", "available": true },
+        { "id": "pchaw-poulet-arabi-3p", "name": "طبق عربي 3 أشخاص", "description": "", "price": 2000, "image": "/images/categories/chawarma-plat.webp", "available": true },
+        { "id": "pchaw-poulet-500g", "name": "شورما 500 غ + مقبلات", "description": "", "price": 2500, "image": "", "available": true },
+        { "id": "pchaw-poulet-1kg", "name": "1 كيلوغرام شورما + مقبلات", "description": "", "price": 3500, "image": "", "available": true }
+      ]
+    },
+    {
+      "id": "les-boissons",
+      "name": "Les Boissons",
+      "description": "",
+      "sortOrder": 13,
+      "active": true,
+      "themeVariant": "default",
+      "engravingKey": "les-boissons",
+      "products": [
+        { "id": "boisson-1l", "name": "Boisson 1 L", "description": "", "price": 200, "image": "/images/categories/les-boissons.webp", "available": true },
+        { "id": "boisson-canette", "name": "Canette", "description": "", "price": 120, "image": "/images/categories/les-boissons.webp", "available": true },
+        { "id": "boisson-eau", "name": "Eau", "description": "", "price": 100, "image": "", "available": true }
+      ]
+    },
+    {
+      "id": "jus-frais-autres",
+      "name": "Jus Frais & Autres",
+      "description": "",
+      "sortOrder": 14,
+      "active": true,
+      "themeVariant": "default",
+      "engravingKey": "jus-frais-autres",
+      "products": [
+        { "id": "jus-mojito", "name": "Jus Mojito", "description": "", "price": 600, "image": "/images/categories/jus-frais-autres.webp", "available": true },
+        { "id": "jus-orange", "name": "Jus d’Orange", "description": "", "price": 500, "image": "/images/categories/jus-frais-autres.webp", "available": true },
+        { "id": "jus-grenadine", "name": "Jus Grenadine", "description": "", "price": 500, "image": "/images/categories/jus-frais-autres.webp", "available": true },
+        { "id": "jus-cocktail", "name": "Jus Cocktail", "description": "", "price": 600, "image": "/images/categories/jus-frais-autres.webp", "available": true },
+        { "id": "jus-cafe", "name": "Café", "description": "", "price": 200, "image": "", "available": true },
+        { "id": "jus-salade-de-fruits", "name": "Salade de Fruits", "description": "", "price": 500, "image": "", "available": true },
+        { "id": "jus-the-a-la-menthe", "name": "Thé à la Menthe", "description": "", "price": 100, "image": "", "available": true },
+        { "id": "jus-gateaux", "name": "Gâteaux", "description": "", "price": 200, "image": "", "available": true }
+      ]
+    }
+  ]
+}

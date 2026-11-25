@@ -1,0 +1,18 @@
+node_modules/
+build/
+dist/
+coverage/
+.DS_Store
+*.log
+.env*
+!.env.example
+Thumbs.db
+.vscode/
+.history/
+.aistudio/
+
+# Local source archives and unused assets
+/originals/
+/public/assets/
+/public/le-r-static-menu.zip
+/src/assets/images/

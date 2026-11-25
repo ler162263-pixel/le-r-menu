@@ -1,0 +1,85 @@
+<!doctype html>
+<html lang="fr" dir="ltr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Le R — Menu Digital · Maraval, Oran</title>
+    <style>
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 24px;
+        background-color: #f5e6c5;
+        color: #5a4126;
+        font-family: Georgia, serif;
+      }
+      .card {
+        max-width: 460px;
+        width: 100%;
+        background: #fbf1da;
+        border: 2px solid rgba(142, 15, 20, 0.35);
+        border-radius: 4px;
+        padding: 32px;
+        text-align: center;
+        box-shadow: 0 4px 18px rgba(90, 65, 38, 0.08);
+      }
+      h1 {
+        margin: 0 0 10px;
+        font-size: 28px;
+        color: #8e0f14;
+      }
+      p {
+        margin: 0 0 22px;
+        font-size: 15px;
+        line-height: 1.6;
+        color: #6b5535;
+      }
+      .actions {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+        justify-content: center;
+      }
+      a {
+        display: inline-block;
+        padding: 11px 20px;
+        font-size: 14px;
+        font-weight: 600;
+        text-decoration: none;
+        border-radius: 3px;
+      }
+      .primary {
+        background: #8e0f14;
+        color: #fbf1da;
+      }
+      .secondary {
+        border: 1px solid rgba(90, 65, 38, 0.4);
+        color: #5a4126;
+      }
+    </style>
+    <script>
+      (function () {
+        var path = window.location.pathname || '/';
+        if (/\/menu\/?$/i.test(path)) {
+          var base = path.replace(/\/menu\/?$/i, '/');
+          window.location.replace(base + '#/menu' + (window.location.search || ''));
+        }
+      })();
+    </script>
+  </head>
+  <body>
+    <main class="card">
+      <h1>Le R · Maraval, Oran</h1>
+      <p>
+        La page demandée est introuvable. Accédez directement à la carte digitale officielle Le R.
+      </p>
+      <div class="actions">
+        <a class="primary" href="./#/menu">Voir le menu</a>
+        <a class="secondary" href="./">Accueil</a>
+      </div>
+    </main>
+  </body>
+</html>

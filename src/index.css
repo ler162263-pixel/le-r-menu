@@ -1,0 +1,360 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+/*
+ * ============================================================================
+ * LE R — DESIGN SYSTEM & CENTRALIZED TOKENS ("THE PRINTED CARD, ALIVE")
+ * ============================================================================
+ */
+:root {
+  /* Typography */
+  --font-display: "Alfa Slab One", "Libre Caslon Text", Georgia, serif;
+  --font-editorial: "Libre Caslon Text", Georgia, serif;
+  --font-body: "Source Serif 4", Georgia, serif;
+  --font-arabic: "Noto Naskh Arabic", "Amiri", "Libre Caslon Text", serif;
+  --font-arabic-display: "Amiri", "Noto Naskh Arabic", serif;
+
+  /* Official Le R Printed Card Palette */
+  --parchment-base: #F5E6C5;
+  --parchment-light: #FBF1DA;
+  --parchment-gold: #EFCB8C;
+  --brand-red: #CC0000;
+  --deep-maroon: #8E0F14;
+  --menu-brown: #8B4513;
+  --heading-brown: #86673F;
+  --item-brown: #7A5C3A;
+  --desc-brown: #6B5535;
+  --dark-feature-brown: #5A4126;
+  --cream-on-dark: #F3E6CB;
+  --palm-sepia: #B8A47E;
+
+  /* Semantic Light Surface & Ink Tokens */
+  --bg-canvas: #F5E6C5;
+  --bg-surface: #FBF1DA;
+  --bg-elevated: #FBF1DA;
+  --bg-subtle: #EFCB8C;
+
+  --text-primary: #5A4126;
+  --text-secondary: #6B5535;
+  --text-muted: #86673F;
+
+  --border-hairline: rgba(142, 15, 20, 0.22);
+  --border-strong: rgba(90, 65, 38, 0.35);
+
+  --accent-burgundy: #8E0F14;
+  --accent-burgundy-hover: #700B0F;
+  --accent-burgundy-soft: rgba(142, 15, 20, 0.08);
+  --accent-red: #CC0000;
+  --accent-gold: #86673F;
+  --accent-gold-soft: rgba(239, 203, 140, 0.35);
+
+  --ease-editorial: cubic-bezier(0.22, 1, 0.36, 1);
+}
+
+/* Warm Dark Espresso Mode (primarily for Owner Dashboard switcher & contrast safety) */
+.dark {
+  --bg-canvas: #24190E;
+  --bg-surface: #2F2113;
+  --bg-elevated: #3A2918;
+  --bg-subtle: #4A3520;
+
+  --text-primary: #F3E6CB;
+  --text-secondary: #DFCCA8;
+  --text-muted: #B8A47E;
+
+  --border-hairline: rgba(243, 230, 203, 0.16);
+  --border-strong: rgba(243, 230, 203, 0.30);
+
+  --accent-burgundy: #CC0000;
+  --accent-burgundy-hover: #A60000;
+  --accent-burgundy-soft: rgba(204, 0, 0, 0.20);
+  --accent-gold: #EFCB8C;
+  --accent-gold-soft: rgba(239, 203, 140, 0.16);
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: var(--font-body);
+    background-color: var(--bg-canvas);
+    color: var(--text-primary);
+  }
+
+  html[dir="rtl"] {
+    font-family: var(--font-arabic);
+    line-height: 1.7;
+  }
+
+  h1, h2, h3, .font-editorial {
+    font-family: var(--font-editorial);
+  }
+
+  .font-display {
+    font-family: var(--font-display);
+  }
+
+  html[dir="rtl"] h1,
+  html[dir="rtl"] h2,
+  html[dir="rtl"] h3,
+  html[dir="rtl"] .font-editorial,
+  html[dir="rtl"] .font-display {
+    font-family: var(--font-arabic-display);
+    letter-spacing: 0;
+  }
+
+  .tabular-nums {
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+/* Layered Living Parchment Surface */
+.parchment-canvas {
+  background-color: var(--parchment-base);
+  background-image:
+    radial-gradient(ellipse at 18% 12%, rgba(251, 241, 218, 0.72) 0%, transparent 55%),
+    radial-gradient(ellipse at 85% 88%, rgba(239, 203, 140, 0.42) 0%, transparent 60%),
+    url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='180' height='180' viewBox='0 0 180 180'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='180' height='180' filter='url(%23n)' opacity='0.045'/%3E%3C/svg%3E");
+}
+
+.parchment-card {
+  background-color: var(--parchment-light);
+  border: 1px solid rgba(134, 103, 63, 0.25);
+  box-shadow: 0 2px 14px rgba(90, 65, 38, 0.06);
+}
+
+.dark-feature-panel {
+  background-color: var(--dark-feature-brown);
+  color: var(--cream-on-dark);
+  border-radius: 6px;
+}
+
+.dark-feature-inset {
+  border: 1px solid rgba(243, 230, 203, 0.42);
+  border-radius: 4px;
+}
+
+/* Double maroon vertical/horizontal rules matching the printed menu fold lines */
+@layer components {
+  .double-maroon-rule {
+    position: relative;
+    padding-bottom: 4px;
+    border-bottom: 1px solid var(--deep-maroon);
+  }
+  .double-maroon-rule::after {
+    content: '';
+    position: absolute;
+    inset-inline: 0;
+    bottom: 2.5px;
+    height: 1.5px;
+    background-color: var(--deep-maroon);
+    pointer-events: none;
+  }
+}
+
+.double-maroon-divider {
+  height: 5px;
+  border-top: 1.5px solid var(--deep-maroon);
+  border-bottom: 1px solid var(--deep-maroon);
+}
+
+/* Printed menu dotted price leader */
+.dotted-leader {
+  flex: 1 1 20px;
+  min-width: 16px;
+  border-bottom: 1.5px dotted rgba(122, 92, 58, 0.48);
+  margin-bottom: 0.35em;
+}
+
+.dark-feature-panel .dotted-leader {
+  border-bottom-color: rgba(243, 230, 203, 0.42);
+}
+
+/* Choreographed GPU-only Reveal Animations */
+@keyframes lerFadeUp {
+  from {
+    opacity: 0;
+    transform: translate3d(0, 14px, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes lerEngravingClip {
+  from {
+    opacity: 0;
+    clip-path: inset(0 0 100% 0);
+    transform: translate3d(0, 6px, 0);
+  }
+  to {
+    opacity: 1;
+    clip-path: inset(0 0 0 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes lerRuleExpand {
+  from {
+    opacity: 0;
+    transform: scaleX(0.6);
+  }
+  to {
+    opacity: 1;
+    transform: scaleX(1);
+  }
+}
+
+.ler-animate-in {
+  animation: lerFadeUp 600ms var(--ease-editorial) both;
+}
+
+.ler-animate-engraving {
+  animation: lerEngravingClip 700ms var(--ease-editorial) both;
+}
+
+.ler-animate-rule {
+  animation: lerRuleExpand 650ms var(--ease-editorial) both;
+}
+
+/* Never distort, mirror, or recolor original Le R artwork */
+.ler-artwork {
+  pointer-events: none;
+  user-select: none;
+  object-fit: contain;
+}
+
+/* Vintage copperplate sepia palm blending on parchment & warm dark surfaces */
+.ler-palm-sepia {
+  mix-blend-mode: multiply;
+}
+.dark .ler-palm-sepia {
+  mix-blend-mode: screen;
+  filter: brightness(1.45) contrast(1.05);
+}
+
+/* Soft radial parchment scrim keeping center Hero type sharp over layered palms */
+.ler-hero-scrim {
+  background: radial-gradient(
+    ellipse at 50% 48%,
+    rgba(251, 241, 218, 0.72) 0%,
+    rgba(245, 230, 197, 0.34) 44%,
+    rgba(245, 230, 197, 0) 70%
+  );
+}
+.dark .ler-hero-scrim {
+  background: radial-gradient(
+    ellipse at 50% 48%,
+    rgba(36, 25, 14, 0.78) 0%,
+    rgba(36, 25, 14, 0.40) 46%,
+    rgba(36, 25, 14, 0) 72%
+  );
+}
+
+/* Tactile card & row interaction: lift on hover-capable pointers, crisp press feedback on touch */
+.ler-card-interactive {
+  transition:
+    transform 220ms var(--ease-editorial),
+    box-shadow 220ms var(--ease-editorial),
+    border-color 200ms ease,
+    background-color 200ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ler-card-interactive:hover {
+    transform: translate3d(0, -3px, 0);
+    box-shadow: 0 10px 24px rgba(90, 65, 38, 0.12);
+  }
+  .dark .ler-card-interactive:hover {
+    box-shadow: 0 12px 26px rgba(0, 0, 0, 0.34);
+  }
+}
+
+.ler-card-interactive:active {
+  transform: translate3d(0, 0, 0) scale(0.985);
+}
+
+/* Tactile row feedback inside menus and dark panels */
+.ler-row-interactive {
+  transition:
+    transform 180ms var(--ease-editorial),
+    background-color 180ms ease;
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .ler-row-interactive:hover {
+    transform: translate3d(3px, 0, 0);
+  }
+  html[dir="rtl"] .ler-row-interactive:hover {
+    transform: translate3d(-3px, 0, 0);
+  }
+}
+
+.ler-row-interactive:active {
+  transform: scale(0.99);
+}
+
+/* Reduced motion & low-spec safeguards */
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+  .ler-card-interactive:hover,
+  .ler-card-interactive:active,
+  .ler-row-interactive:hover,
+  .ler-row-interactive:active {
+    transform: none !important;
+  }
+}
+
+/* Subtle scrollbar hiding for category rail */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+#menu-instant-search::-webkit-search-cancel-button {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+@media print {
+  @page {
+    margin: 16mm;
+  }
+
+  html,
+  body {
+    background: #ffffff !important;
+    color: #111111 !important;
+  }
+
+  .no-print {
+    display: none !important;
+  }
+
+  .qr-print-only-container {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+    min-height: 85vh !important;
+    width: 100% !important;
+    background: #ffffff !important;
+  }
+
+  .qr-print-sheet {
+    border: 1px solid #d4d4d4 !important;
+    background: #ffffff !important;
+    color: #111111 !important;
+    padding: 32px !important;
+    box-shadow: none !important;
+  }
+}
