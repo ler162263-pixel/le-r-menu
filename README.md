@@ -1,8 +1,8 @@
-# Le R â€” Static Digital Restaurant Menu
+# Le R GÇö Static Digital Restaurant Menu
 
 A fast, mobile-first, **read-only static digital restaurant menu** built with **React + TypeScript + Vite + Tailwind CSS**, powered entirely by local JSON (`src/data/menu.json`) and designed for **free GitHub Pages hosting** and **QR code table access**.
 
-> **Preserved Design Identity:** Built around the approved **Le R â€” "The Printed Card, Alive"** aesthetic (warm parchment `#F5E6C5` / `#FBF1DA`, deep maroon `#8E0F14`, house dark-brown feature panels `#5A4126`, Libre Caslon & Alfa Slab typography, responsive botanical palm engravings, and Algerian Dinar `DA` pricing).
+> **Preserved Design Identity:** Built around the approved **Le R GÇö "The Printed Card, Alive"** aesthetic (warm parchment `#F5E6C5` / `#FBF1DA`, deep maroon `#8E0F14`, house dark-brown feature panels `#5A4126`, Libre Caslon & Alfa Slab typography, responsive botanical palm engravings, and Algerian Dinar `DA` pricing).
 
 ---
 
@@ -20,28 +20,28 @@ Per the strict read-only static specification (Sections 1, 4, and 10), the previ
 ## Folder Structure
 
 ```text
-â”œâ”€â”€ .github/workflows/deploy.yml   # Automated free GitHub Pages deployment
-â”œâ”€â”€ public/
-â”‚   â””â”€â”€ images/                    # Custom client logos & product photos
-â”œâ”€â”€ scripts/
-â”‚   â””â”€â”€ generate-qr.mjs            # Developer CLI to generate print-ready QR PNG
-â”œâ”€â”€ src/
-â”‚   â”œâ”€â”€ assets/                    # Le R engravings, icons, parchment & palm art
-â”‚   â”œâ”€â”€ components/
-â”‚   â”‚   â”œâ”€â”€ common/                # Motion primitives, ornaments, SafeMenuImage, switchers
-â”‚   â”‚   â””â”€â”€ public/                # PublicHeader, HeroSection, ProductDetailModal, PublicFooter
-â”‚   â”œâ”€â”€ config/                    # Theme config defaults
-â”‚   â”œâ”€â”€ contexts/                  # Theme, Language (FR/EN/AR), Toast, RestaurantDataContext
-â”‚   â”œâ”€â”€ data/
-â”‚   â”‚   â””â”€â”€ menu.json              # Single source of truth for restaurant & menu items
-â”‚   â”œâ”€â”€ hooks/                     # Context wrapper hooks
-â”‚   â”œâ”€â”€ i18n/                      # FR / EN / AR translations
-â”‚   â”œâ”€â”€ layouts/                   # PublicLayout
-â”‚   â”œâ”€â”€ pages/public/              # HomePage, MenuPage, NotFoundPage
-â”‚   â”œâ”€â”€ routes/                    # AppRoutes (HashRouter for zero-404 GitHub Pages)
-â”‚   â”œâ”€â”€ types/                     # TypeScript interfaces
-â”‚   â””â”€â”€ utils/                     # jsonMenuLoader, restaurantLogic, qrCodeLogic + *.test.ts
-â””â”€â”€ vite.config.ts                 # Configured with base: './' for subpath compatibility
+Gö£GöÇGöÇ .github/workflows/deploy.yml   # Automated free GitHub Pages deployment
+Gö£GöÇGöÇ public/
+Göé   GööGöÇGöÇ images/                    # Custom client logos & product photos
+Gö£GöÇGöÇ scripts/
+Göé   GööGöÇGöÇ generate-qr.mjs            # Developer CLI to generate print-ready QR PNG
+Gö£GöÇGöÇ src/
+Göé   Gö£GöÇGöÇ assets/                    # Le R engravings, icons, parchment & palm art
+Göé   Gö£GöÇGöÇ components/
+Göé   Göé   Gö£GöÇGöÇ common/                # Motion primitives, ornaments, SafeMenuImage, switchers
+Göé   Göé   GööGöÇGöÇ public/                # PublicHeader, HeroSection, ProductDetailModal, PublicFooter
+Göé   Gö£GöÇGöÇ config/                    # Theme config defaults
+Göé   Gö£GöÇGöÇ contexts/                  # Theme, Language (FR/EN/AR), Toast, RestaurantDataContext
+Göé   Gö£GöÇGöÇ data/
+Göé   Göé   GööGöÇGöÇ menu.json              # Single source of truth for restaurant & menu items
+Göé   Gö£GöÇGöÇ hooks/                     # Context wrapper hooks
+Göé   Gö£GöÇGöÇ i18n/                      # FR / EN / AR translations
+Göé   Gö£GöÇGöÇ layouts/                   # PublicLayout
+Göé   Gö£GöÇGöÇ pages/public/              # HomePage, MenuPage, NotFoundPage
+Göé   Gö£GöÇGöÇ routes/                    # AppRoutes (HashRouter for zero-404 GitHub Pages)
+Göé   Gö£GöÇGöÇ types/                     # TypeScript interfaces
+Göé   GööGöÇGöÇ utils/                     # jsonMenuLoader, restaurantLogic, qrCodeLogic + *.test.ts
+GööGöÇGöÇ vite.config.ts                 # Configured with base: './' for subpath compatibility
 ```
 
 ---
@@ -54,11 +54,11 @@ npm run dev
 ```
 
 Useful commands:
-- `npm run dev` â€” Start local dev server on `http://localhost:3000`
-- `npm run build` â€” Build static production bundle into `dist/`
-- `npm run preview` â€” Preview production build locally
-- `npm run lint` â€” Run TypeScript type check (`tsc --noEmit`)
-- `npm test` â€” Run unit tests (`src/utils/*.test.ts`)
+- `npm run dev` GÇö Start local dev server on `http://localhost:3000`
+- `npm run build` GÇö Build static production bundle into `dist/`
+- `npm run preview` GÇö Preview production build locally
+- `npm run lint` GÇö Run TypeScript type check (`tsc --noEmit`)
+- `npm test` GÇö Run unit tests (`src/utils/*.test.ts`)
 
 ---
 
@@ -73,7 +73,7 @@ Useful commands:
    git remote add origin https://github.com/<USERNAME>/<REPO_NAME>.git
    git push -u origin main
    ```
-2. In your GitHub repository, go to **Settings â†’ Pages â†’ Build and deployment â†’ Source** and select **GitHub Actions**.
+2. In your GitHub repository, go to **Settings GåÆ Pages GåÆ Build and deployment GåÆ Source** and select **GitHub Actions**.
 3. The included `.github/workflows/deploy.yml` workflow automatically builds `npm run build` and publishes `dist/` to:
    ```
    https://<USERNAME>.github.io/<REPO_NAME>/
@@ -95,7 +95,7 @@ Run the included developer QR generator script with your **published URL**:
 npm run generate-qr -- https://<USERNAME>.github.io/<REPO_NAME>/#/menu
 ```
 
-This validates that the URL is a real published link (blocking `localhost`, `127.0.0.1`, and placeholder domains) and saves a high-contrast `1024Ã—1024` PNG (`#000000` on `#FFFFFF`, Error Correction `H`) inside `qr-output/<restaurant>-menu-qr.png`, ready to send to the restaurant owner for table printing.
+This validates that the URL is a real published link (blocking `localhost`, `127.0.0.1`, and placeholder domains) and saves a high-contrast `1024+ù1024` PNG (`#000000` on `#FFFFFF`, Error Correction `H`) inside `qr-output/<restaurant>-menu-qr.png`, ready to send to the restaurant owner for table printing.
 
 ---
 
